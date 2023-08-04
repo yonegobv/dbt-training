@@ -10,4 +10,4 @@ select
     string_field_2 as Segment,
     string_field_3 as Country,    
     string_field_4 as State    
-from Raw.Customer
+from {{ source('testproject1', 'Customer') }}

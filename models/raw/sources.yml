@@ -1,0 +1,10 @@
+version: 2
+
+sources:
+  - name: testproject1
+    database: yonego-dbt
+    schema: Raw
+    tables:
+      - name: Customer
+      - name: Orders
+      - name: Product

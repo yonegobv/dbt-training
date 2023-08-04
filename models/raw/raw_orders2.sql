@@ -4,4 +4,4 @@
     )
 }}
 
-select * from Raw.Orders
+select * from {{ source('testproject1', 'Orders') }}

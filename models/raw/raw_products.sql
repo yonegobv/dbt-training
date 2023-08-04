@@ -9,4 +9,4 @@ select
     string_field_1 as ProductID,
     string_field_2 as ProductName,
     string_field_3 as SubCategory,
-from Raw.Product
+from {{ source('testproject1', 'Product') }}
